@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Bike Verleih Rantrum / Husum</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
+    nav { background: #34495e; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    main { padding: 20px; }
+    section { margin-bottom: 40px; }
+    .bike-gallery { display: flex; flex-wrap: wrap; gap: 20px; }
+    .bike { flex: 1 1 300px; border: 1px solid #ccc; padding: 10px; border-radius: 8px; }
+    .bike img { width: 100%; height: auto; border-radius: 8px; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; }
+    form { display: flex; flex-direction: column; max-width: 400px; }
+    form input, form textarea, form button { margin-bottom: 10px; padding: 8px; font-size: 1em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>E-Bike Verleih Rantrum / Husum</h1>
+    <p>Täglich von 8–18 Uhr erreichbar – Jetzt E-Bike mieten!</p>
+  </header>
+  <nav>
+    <a href="#bikes">Unsere E-Bikes</a>
+    <a href="#preise">Preise</a>
+    <a href="#kontakt">Kontakt & Buchung</a>
+  </nav>
+  <main>
+    <section id="bikes">
+      <h2>Unsere E-Bikes</h2>
+      <div class="bike-gallery">
+        <div class="bike">
+          <img src="https://images.cube.eu/catalog/product/cache/f51e4f84e0efb4dc7e6dfdb13e243f6f/k/a/kathmandu-hybrid-one-625-silvernblack-626111_side.jpeg" alt="Cube Kathmandu">
+          <h3>Cube Kathmandu</h3>
+          <p>Komfortables Trekking-E-Bike mit kraftvollem Bosch-Motor. Ideal für Touren in der Region.</p>
+        </div>
+        <div class="bike">
+          <img src="https://www.winora.com/media/image/88/f6/c5/WINORA-Sinus-iX10-Damen-1.jpg" alt="Winora Damen Citybike">
+          <h3>Winora Citybike (Damen)</h3>
+          <p>Stilvolles und bequemes City-E-Bike – perfekt für Alltagsfahrten oder Wochenendausflüge.</p>
+        </div>
+        <div class="bike">
+          <img src="https://via.placeholder.com/400x300?text=E-Bike+3" alt="E-Bike 3">
+          <h3>E-Bike Modell 3</h3>
+          <p>Modernes E-Bike mit robuster Ausstattung und starkem Akku. Details folgen bald.</p>
+        </div>
+        <div class="bike">
+          <img src="https://via.placeholder.com/400x300?text=E-Bike+4" alt="E-Bike 4">
+          <h3>E-Bike Modell 4</h3>
+          <p>Flexibles Tourenrad für jede Strecke. Ideal für spontane Ausflüge.</p>
+        </div>
+        <div class="bike">
+          <img src="https://via.placeholder.com/400x300?text=E-Bike+5" alt="E-Bike 5">
+          <h3>E-Bike Modell 5</h3>
+          <p>Komfort und Leistung vereint. Weitere Informationen bald verfügbar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="preise">
+      <h2>Preise</h2>
+      <ul>
+        <li><strong>Tagespreis:</strong> 29 €</li>
+        <li><strong>Wochenende (Fr–So):</strong> 80 €</li>
+        <li><strong>Woche:</strong> 190 €</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt & Buchung</h2>
+      <p>Du möchtest ein E-Bike reservieren? Melde dich einfach:</p>
+      <ul>
+        <li><strong>Telefon:</strong> <a href="tel:015172720156">0151 72720156</a></li>
+        <li><strong>E-Mail:</strong> <a href="mailto:ben_boysen@hotmail.com">ben_boysen@hotmail.com</a></li>
+        <li><strong>WhatsApp:</strong> Direkt über die Telefonnummer erreichbar</li>
+      </ul>
+      <h3>Oder sende uns eine Buchungsanfrage:</h3>
+      <form action="mailto:ben_boysen@hotmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <input type="email" name="email" placeholder="Deine E-Mail" required>
+        <input type="text" name="telefon" placeholder="Telefonnummer">
+        <textarea name="nachricht" placeholder="Welche E-Bikes möchtest du wann mieten?" rows="5" required></textarea>
+        <button type="submit">Anfrage senden</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 E-Bike Verleih Rantrum / Husum</p>
+  </footer>
+</body>
+</html>
